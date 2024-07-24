@@ -1,0 +1,28 @@
+/* styles.css */
+
+.container {
+    display: flex; /* Utiliza Flexbox para el contenedor */
+    flex-direction: row; /* Alinea los elementos en el eje princiap en Horizontal */
+    justify-content: space-between; /* Alinea los elementos de manera que el primero y el ultimo queden al inicio y final en el eje principal */
+    align-items: center; /* Alinea los elementos al centro */
+    height: 600px; /* Altura del contenedor */
+    padding: 5px; /* Espacio alrededor del contenedor */
+}
+
+.box {
+    width: 300px; /* Ancho de cada cuadro */
+    height: 200px; /* Altura de cada cuadro */
+    
+}
+
+.red {
+    background-color: #ff0000; /* Color rojo */
+}
+
+.green {
+    background-color: #4cff00; /* Color verde */
+}
+
+.blue {
+    background-color: #0026ff; /* Color azul */
+}
