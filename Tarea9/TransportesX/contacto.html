@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TransportesX</title>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/transportes.css">
 </head>
@@ -14,18 +14,51 @@
             <h1>Transportes X</h1>
         </div>
     </header>
-    <nav class="holder">
-        <ul>
-            <li><a class="activo" href="index.html">Home</a></li>
-            <li><a class="activo" href="nosotros.html">Nosotros</a></li>
-            <li><a class="activo" href="servicios.html">Servicios</a></li>
-            <li><a class="activo" href="galeria.html">Galeria</a></li>
-            <li><a class="activo" href="novedades.html">Novedades</a></li>
-            <li><a class="activo" href="contacto.html">Contacto</a></li>
-        </ul>
+    <nav>
+        <div class="holder">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="novedades.html">Novedades</a></li>
+                <li><a class="activo" href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
     </nav>
     <main class="holder">
-
+        <h2>Contacto</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h4>Información de Contacto</h4>
+                <p><strong>Dirección:</strong> Calle Falsa 123, Esprinfield, Argentina</p>
+                <p><strong>Teléfono:</strong> +54 15 3516 0074</p>
+                <p><strong>Email:</strong> contacto@atransportesx.com</p>
+                <p><strong>Horario de Atención:</strong> Lunes a Viernes, 9:00 - 18:00</p>
+            </div>
+            <div class="contact-form">
+                <h4>Envíanos un Mensaje</h4>
+                <form>
+                    <div class="form-group">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo Electrónico</label>
+                        <input type="email" class="form-control" id="email" placeholder="Ingresa tu correo electrónico">
+                    </div>
+                    <div class="form-group">
+                        <label for="telefono">Teléfono</label>
+                        <input type="tel" class="form-control" id="telefono" placeholder="Ingresa tu teléfono">
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea class="form-control" id="mensaje" rows="4" placeholder="Escribe tu mensaje"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+            </div>
+        </div>
     </main>
     <footer>
         <p>Diseñado por Lucas Nicolas Tome Rivero - &copy;2024</p>

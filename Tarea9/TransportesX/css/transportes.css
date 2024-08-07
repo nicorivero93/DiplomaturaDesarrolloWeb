@@ -11,9 +11,9 @@ h2{
     font-weight: 400;
 }
 
-header{
+header {
     background-color: #2e64a1;
-    padding: 16px 0; /*1rem 0*/
+    padding: 1rem 0; /*16px 0*/
 }
 
 header h1 {
@@ -194,4 +194,95 @@ footer{
 
 .servicio:nth-child(even) {
     flex-direction: row-reverse;
+}
+
+/* Estilos de Contacto*/
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.contact-info, .contact-form {
+    flex: 1;
+}
+
+    .contact-info h4, .contact-form h4 {
+        color: #2e64a1;
+    }
+
+    .contact-info p {
+        margin-bottom: 10px;
+    }
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-control {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.btn-primary {
+    background-color: #2e64a1;
+    border-color: #2e64a1;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+    .btn-primary:hover {
+        background-color: #1a4c7c;
+    }
+
+/*Estilos Galería*/
+
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.carousel-item img {
+    width: 100%;
+    display: block;
+}
+
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 18px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
 }

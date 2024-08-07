@@ -1,9 +1,10 @@
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TransportesX</title>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/transportes.css">
 </head>
@@ -14,21 +15,51 @@
             <h1>Transportes X</h1>
         </div>
     </header>
-    <nav class="holder">
-        <ul>
-            <li><a class="activo" href="index.html">Home</a></li>
-            <li><a class="activo" href="nosotros.html">Nosotros</a></li>
-            <li><a class="activo" href="servicios.html">Servicios</a></li>
-            <li><a class="activo" href="galeria.html">Galeria</a></li>
-            <li><a class="activo" href="novedades.html">Novedades</a></li>
-            <li><a class="activo" href="contacto.html">Contacto</a></li>
-        </ul>
+    <nav>
+        <div class="holder">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a class="activo" href="galeria.html">Galeria</a></li>
+                <li><a href="novedades.html">Novedades</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
     </nav>
     <main class="holder">
-
+        <h2>Galería</h2>
+        <div class="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/galeria/img01.jpg" alt="Camion Rojo y Plateado">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/galeria/img02.jpg" alt="Camion Amarillo">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/galeria/img03.jpg" alt="Camion Largo de Ruta">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/galeria/img04.jpg" alt="Barco Blanco">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/galeria/img05.jpg" alt="Interior de Barco Restaurante">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/galeria/img06.jpg" alt="Tren Negro">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/galeria/img07.jpg" alt="Tren Rojo">
+                </div>
+            </div>
+            <button class="carousel-control prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="carousel-control next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
     </main>
     <footer>
         <p>Diseñado por Lucas Nicolas Tome Rivero - &copy;2024</p>
     </footer>
+    <script src="js/galeria.js"></script>
 </body>
 </html>
