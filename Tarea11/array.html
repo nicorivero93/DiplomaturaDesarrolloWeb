@@ -1,0 +1,51 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TransportesX</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/transportes.css">
+</head>
+<body>
+    <header>
+        <div class="holder">
+            <img src="img/logo.png" width="100" alt="Transportes X">
+            <h1>Transportes X</h1>
+        </div>
+    </header>
+    <nav>
+        <div class="holder">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a class="activo" href="array.html">Array</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="novedades.html">Novedades</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main class="holder">
+        <h1>Encontrar el número mayor en un array</h1>
+
+        <label for="numeros">Ingresa números separados por comas:</label>
+        <input type="text" id="numeros" name="numeros">
+        <button onclick="encontrarMayor()">Encontrar mayor</button>
+
+        <p id="resultado"></p>
+
+        <script>
+            function encontrarMayor() {
+                const numeros = document.getElementById("numeros").value.split(",").map(Number);
+                const mayor = Math.max(...numeros);
+
+                document.getElementById("resultado").innerText = "El número mayor es: " + mayor;
+            }
+        </script>
+    </main>
+    <footer>
+        <p>Diseñado por Lucas Nicolas Tome Rivero - &copy;2024</p>
+    </footer>
+</body>
+</html>
