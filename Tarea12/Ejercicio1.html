@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambiar color de fondo</title>
+    <style>
+        /* Estilo inicial para el fondo del body */
+        body {
+            background-color: white; /* Color de fondo inicial */
+        }
+
+        /* Estilos para los cuadrados */
+        .cuadrado {
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+            margin: 10px;
+            cursor: pointer;
+            border: 2px solid white; /* Borde blanco para diferenciar los cuadrados */
+        }
+
+        /* Colores de fondo para los cuadrados */
+        #rojo {
+            background-color: red;
+        }
+
+        #verde {
+            background-color: green;
+        }
+
+        #azul {
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div id="rojo" class="cuadrado"></div>
+    <div id="verde" class="cuadrado"></div>
+    <div id="azul" class="cuadrado"></div>
+
+    <script>
+        // Seleccionamos todos los elementos con la clase 'cuadrado'
+        const cuadrados = document.querySelectorAll('.cuadrado');
+
+        // Recorremos cada cuadrado y le añadimos un evento 'click'
+        cuadrados.forEach(cuadrado => {
+            cuadrado.addEventListener('click', function () {
+                // Cambiamos el color de fondo del documento al color del cuadrado clickeado
+                document.body.style.backgroundColor = window.getComputedStyle(cuadrado).backgroundColor;
+            });
+        });
+    </script>
+</body>
+</html>

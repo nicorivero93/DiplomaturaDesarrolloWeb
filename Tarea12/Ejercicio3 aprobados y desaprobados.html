@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumnos Aprobados y Desaprobados</title>
+</head>
+<body>
+    <h1>Lista de alumnos</h1>
+
+    <h2>Aprobados</h2>
+    <ul id="lista-aprobados"></ul>
+
+    <h2>Desaprobados</h2>
+    <ul id="lista-desaprobados"></ul>
+
+    <script>
+        var alumnos = [
+            { nombre: 'Juan Gomez', nota: 7 },
+            { nombre: 'Pedro Rodriguez', nota: 4 },
+            { nombre: 'Roxana García', nota: 8 },
+            { nombre: 'Luciano Lopez', nota: 5 },
+            { nombre: 'Fernanda Gimenez', nota: 6 },
+            { nombre: 'Florencia Martinez', nota: 10 },
+            { nombre: 'Raul Sanchez', nota: 7 },
+            { nombre: 'Sandra Figueroa', nota: 8 }
+        ];
+
+        const aprobados = alumnos.filter(alumno => alumno.nota >= 7);
+        const desaprobados = alumnos.filter(alumno => alumno.nota < 7);
+
+        const listaAprobados = document.getElementById('lista-aprobados');
+        const listaDesaprobados = document.getElementById('lista-desaprobados');
+
+        aprobados.forEach(alumno => {
+            const li = document.createElement('li');
+            li.textContent = alumno.nombre + ' - Nota: ' + alumno.nota;
+            listaAprobados.appendChild(li);
+        });
+
+        desaprobados.forEach(alumno => {
+            const li = document.createElement('li');
+            li.textContent = alumno.nombre + ' - Nota: ' + alumno.nota;
+            listaDesaprobados.appendChild(li);
+        });
+    </script>
+</body>
+</html>
