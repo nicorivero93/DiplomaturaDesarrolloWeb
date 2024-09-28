@@ -3,12 +3,12 @@ import '../../styles/components/layout/header.css'
 
 const Header = (props) => {
     return (
-        <header>
+        <Header>
             <div className="holder">
                 <img src="images/logo.png" width="100" alt="Transportes X" />
                 <h1>Transportes x</h1>
             </div>
-         </header>
+         </Header>
     );
 }
 
